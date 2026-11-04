@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f8f9fb">
+  <meta name="description" content="Un archivo ciudadano e independiente de las controversias del gobierno de José Antonio Kast. Hechos, fechas, fuentes y contexto para no olvidar.">
+  <meta property="og:title" content="Kast, en el archivo">
+  <meta property="og:description" content="El gobierno pasa. El archivo queda. Un registro independiente, con fuentes y contexto.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+  <title>Kast, en el archivo — Memoria ciudadana</title>
+  <script src="/theme.js"></script>
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#archivo">Saltar al archivo</a>
+  <div class="country-line" aria-hidden="true"></div>
+  <header class="site-header wrap">
+    <a class="brand" href="#inicio" aria-label="Kast, en el archivo. Inicio"><span class="brand-mark" aria-hidden="true">✦</span> kast<span class="brand-dot">.</span><span class="brand-small">en el archivo</span></a>
+    <nav aria-label="Navegación principal">
+      <a class="nav-archive" href="#archivo">El archivo</a>
+      <button class="text-button" data-open="method-dialog">El criterio</button>
+      <button class="contribute-button" data-open="contribute-dialog">Aportar un caso <span aria-hidden="true">↗</span></button>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Activar modo oscuro" title="Cambiar tema (D)"><span aria-hidden="true" id="theme-icon">◐</span></button>
+    </nav>
+  </header>
+  <main id="inicio">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Memoria ciudadana · Chile, 2026</p>
+        <h1 id="hero-title">El gobierno pasa.<br>El <em>archivo</em> queda.</h1>
+        <p class="hero-description">Las controversias del gobierno de José Antonio Kast.<br class="desktop-break"> Con fechas, fuentes y contexto. Porque olvidar sale caro.</p>
+        <a class="archive-link" href="#archivo">Explorar el archivo <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="hero-art">
+        <img src="/assets/la-moneda.jpg" width="1200" height="800" alt="Ilustración conceptual de un palacio de gobierno en azul y blanco, una bandera chilena y una carpeta roja." fetchpriority="high">
+        <figcaption>El poder cambia. La memoria permanece.</figcaption>
+      </figure>
+    </section>
+    <div class="archive-strip wrap">
+      <p><span class="independent-mark" aria-hidden="true">✳</span> Un proyecto independiente. Sin afiliación al Gobierno.</p>
+      <p>Última revisión <time datetime="2026-10-25">25 oct. 2026</time></p>
+    </div>
+    <section class="archive-section wrap" id="archivo" aria-labelledby="archive-title" tabindex="-1">
+      <div class="archive-heading">
+        <div><h2 id="archive-title">Para que quede registro<span class="red-dot">.</span></h2><p><span id="total-count">6</span> casos documentados. Cada uno, con su fuente.</p></div>
+        <div class="sort-control"><label for="sort">Ordenar</label><select id="sort"><option value="newest">Más recientes primero</option><option value="oldest">Más antiguos primero</option></select></div>
+      </div>
+      <div class="archive-toolbar">
+        <div class="filters" id="filters" role="group" aria-label="Filtrar por tema"></div>
+        <label class="search-box"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">Buscar en el archivo</span><input id="search" type="search" placeholder="Buscar en el archivo…" maxlength="120" autocomplete="off"><kbd>/</kbd></label>
+      </div>
+      <div class="results-meta"><p id="result-count" role="status" aria-live="polite">Cargando el archivo…</p><button class="text-button reset-filter" id="reset-filters" hidden>Limpiar filtros <span aria-hidden="true">×</span></button><span class="year-marker">2026</span></div>
+      <div class="timeline" id="timeline"></div>
+      <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">∅</span><h3>No hay registros con esos filtros.</h3><p>Prueba con otra palabra o vuelve a ver el archivo completo.</p><button class="primary-button" id="empty-reset">Ver todos los casos</button></div>
+      <noscript><div class="empty-state"><h3>Activa JavaScript para explorar el archivo.</h3><p>Puedes consultar la colección completa y sus fuentes en <a href="/data.js">el archivo de datos</a>.</p></div></noscript>
+      <p class="archive-end" id="archive-end"><span aria-hidden="true">✦</span> Hasta aquí el registro. La memoria sigue.</p>
+    </section>
+    <section class="closing-section" aria-labelledby="closing-title"><div class="wrap closing-inner"><div><p>El archivo no tiene la última palabra.</p><h2 id="closing-title">Tiene las fuentes.</h2></div><div class="closing-note"><p>Documentar también es dejar espacio para el contexto, las correcciones y las respuestas.</p><button class="closing-link" data-open="method-dialog">Así documentamos <span aria-hidden="true">↗</span></button></div></div></section>
+  </main>
+  <footer class="site-footer wrap"><div><a class="footer-brand" href="#inicio">kast<span>.</span> en el archivo</a><p>Un ejercicio de memoria ciudadana.</p></div><div class="footer-notes"><p>Archivo editorial independiente · Chile</p><p>Inspirado en <a href="https://clawd.rip/" target="_blank" rel="noopener noreferrer">clawd.rip <span aria-hidden="true">↗</span><span class="sr-only"> (nueva pestaña)</span></a> · Pulsa <kbd>D</kbd> para cambiar el tema.</p></div></footer>
+  <dialog id="method-dialog" aria-labelledby="method-title"><div class="dialog-inner"><button class="close-dialog" aria-label="Cerrar" data-close>×</button><p class="dialog-kicker">El criterio editorial</p><h2 id="method-title">La crítica necesita memoria.<br>Y la memoria, fuentes.</h2><p>Este es un archivo ciudadano sobre decisiones, controversias y declaraciones del gobierno de José Antonio Kast. La selección y los titulares tienen una mirada crítica; los resúmenes deben poder contrastarse con las fuentes enlazadas.</p><ol class="principles"><li><strong>Una fuente antes que una frase.</strong><p>Cada caso incluye fecha, medio y enlace. Para la cobertura chilena usamos BBCL (BioBioChile), Diario Financiero, El Ciudadano, EL PAÍS y Radio Universidad de Chile. Un reporte de prensa es evidencia de lo informado por ese medio.</p></li><li><strong>El contexto es parte del registro.</strong><p>Distinguimos hechos reportados, declaraciones cuestionadas y propuestas en discusión. Una denuncia no es una condena; una propuesta no es una medida aprobada.</p></li><li><strong>Nada está escrito en piedra.</strong><p>Esta colección es una fotografía revisada al 25 de octubre de 2026, no una cobertura exhaustiva ni una actualización automática. Las fuentes pueden cambiar o requerir suscripción.</p></li></ol><p class="method-footnote">La paleta toma el azul #0f69b4 y el rojo #eb3c46 del <a href="https://www.cultura.gob.cl/wp-content/uploads/2024/05/manual-de-comunicacion-visual-gob-2024.pdf" target="_blank" rel="noopener noreferrer">manual gráfico del Gobierno de Chile<span class="sr-only"> (nueva pestaña)</span></a>. La identidad es propia. No existe afiliación institucional. La ilustración de portada fue generada con IA y no constituye evidencia de ningún caso.</p></div></dialog>
+  <dialog id="contribute-dialog" aria-labelledby="contribute-title"><div class="dialog-inner"><button class="close-dialog" aria-label="Cerrar" data-close>×</button><p class="dialog-kicker">Ayuda a completar la memoria</p><h2 id="contribute-title">¿Algo que deba<br>quedar en el archivo?</h2><p>Prepara un caso o una corrección con una fuente verificable. El borrador se guarda solo en este navegador. Puedes descargarlo; todavía no hay recepción de aportes en línea.</p><form id="contribute-form" novalidate><label for="draft-title">Título del caso</label><input id="draft-title" name="title" maxlength="140" required placeholder="¿Qué pasó?" aria-describedby="error-title"><p class="field-error" id="error-title"></p><div class="form-row"><div><label for="draft-date">Fecha del hecho</label><input type="date" id="draft-date" name="date" required aria-describedby="error-date"><p class="field-error" id="error-date"></p></div><div><label for="draft-category">Tema</label><select id="draft-category" name="category" required aria-describedby="error-category"><option value="">Selecciona un tema</option></select><p class="field-error" id="error-category"></p></div></div><label for="draft-summary">Qué ocurrió y qué contexto falta</label><textarea id="draft-summary" name="summary" rows="4" maxlength="2000" required placeholder="Describe el hecho o la corrección e indica qué respalda la fuente." aria-describedby="error-summary"></textarea><p class="field-error" id="error-summary"></p><label for="draft-source">Enlace de la fuente</label><input type="url" id="draft-source" name="source" maxlength="2000" required placeholder="https://…" aria-describedby="error-source"><p class="field-error" id="error-source"></p><p class="draft-status" id="draft-status" role="status">No incluyas datos personales ni información privada.</p><div class="form-actions"><button class="primary-button" type="submit">Descargar borrador <span aria-hidden="true">↓</span></button><button class="text-button" type="button" id="clear-draft">Borrar borrador</button></div></form></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

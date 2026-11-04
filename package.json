@@ -1,0 +1,14 @@
+{
+  "name": "president-archivo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Archivo ciudadano independiente de controversias del gobierno de José Antonio Kast.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "test": "node --test",
+    "check": "node --check dist/app.js && node --check dist/core.js && node --check dist/data.js && node --check dist/theme.js && node --check scripts/serve.mjs && node --test"
+  },
+  "engines": { "node": ">=22" }
+}

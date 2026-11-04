@@ -21,6 +21,6 @@ The private preview was published on 25 October 2026. Deployment identity and pr
 - [x] Exclude local hosting configuration, environment files, runtime data, logs, and archives from GitHub publication.
 - [x] Run the six existing tests and syntax checks against the sanitized source.
 - [x] Scan the exact publication contents for common secret formats, local paths, private deployment identifiers, and image metadata.
-- [ ] Push a clean source history to the public GitHub repository `tsktsktiag/president-archivo`.
+- [x] Push a clean source history to the public GitHub repository `tsktsktiag/president-archivo` and verify the remote commit and public visibility.
 
 The site is a curated snapshot reviewed on 25 October 2026. It is not an automated news feed or an exhaustive audit of the administration. Contributions require an editorial workflow before public collection can be enabled.

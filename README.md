@@ -2,6 +2,8 @@
 
 An independent Spanish language archive of controversies involving José Antonio Kast's government. Inspired by the editorial timeline at [clawd.rip](https://clawd.rip/), with an original identity using Chilean government blue and red.
 
+Source: [tsktsktiag/president-archivo](https://github.com/tsktsktiag/president-archivo).
+
 ## Run locally
 
 Requires Node.js 22 or newer. No installation, API keys, environment file, database, or build step is needed.
